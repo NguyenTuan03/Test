@@ -9,6 +9,9 @@
 </head>
 <body>
     <div class="container">
+        <audio id="music">
+            <source type="audio/mp3" src="./ciara_overdose_dave_luxe_remix_lyrics_got_those_sneaky_eyes_what_you_tryna_hide_-2932823894447162892.mp3">
+        </audio>
         <div class="intro">
             <p>Text</p>
         </div>
@@ -16,7 +19,7 @@
         <div class="Card">
             <div class="line-left"></div>
             <div class="line-right"></div>
-            <div class="card-text">test</div>
+            <!-- <div class="card-text">test</div> -->
             <div class="card-heart"></div>
             <div class="card-icon"></div>
         </div>
@@ -24,5 +27,11 @@
             <div class="planet"></div>
         </div>
     </div>
+    <script>
+        document.querySelector('.intro p').onclick = function()
+        {
+            document.getElementById('music').play();
+        }
+    </script>
 </body>
 </html>
